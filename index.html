@@ -11,9 +11,17 @@
             font-family: 'Roboto Mono', monospace;
             margin: 0;
             padding: 0;
-            background-color: #101010;
+            background: linear-gradient(-45deg, #101010, #1c1c1c, #242e38, #101010);
+            background-size: 300% 300%;
+            animation: subtleGradient 20s ease infinite;
             color: #e0e0e0;
             line-height: 1.6;
+        }
+
+        @keyframes subtleGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         header {
@@ -119,6 +127,7 @@
 
         .contact {
             text-align: center;
+            
         }
 
         .contact form input, .contact form textarea {
@@ -167,6 +176,18 @@
             margin: 0;
             font-size: 0.9em;
         }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #3498db;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -179,10 +200,7 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Explore my projects and learn about my journey as a game developer.</p>
-    </section>
+    
 
     <section id="about" class="section">
         <h2>About Me</h2>
@@ -190,7 +208,7 @@
 
         <p><strong>Programming Languages:</strong> C#, C++, GDScript, Python, Java, JavaScript, PHP, MySQL, HTML, CSS, AJAX</p>
 
-        <p><strong>Game Engines and Tools:</strong> Unity, Unreal Engine 5, Godot, Blender, Git/GitHub.</p>
+        <p><strong>Game Engines and Tools:</strong> Unity, Unreal Engine, Godot, Blender, Git/GitHub.</p>
 
         <p>From the time I was 10 years old, I was playing games on my family's computer in the living room, immersing myself in the stories and worlds built by past game developers. This early exposure to games created a safe haven for me while growing up. Gaming is where all us Nerds go to get away and enjoy our time. 
         <p>As I grew older, I began to wonder how these games were made. I started to learn about programming and game development after high school, and I was hooked. I knew that I wanted to be a game developer and create my own worlds and stories so that other people like me can sink hours and hours into a game with no remorse, just like I have many, many times.</p>
@@ -205,7 +223,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/X48jQEXL8wk?si=OVRkcmGSg3Jo4-jm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <h3>Breach and Clear</h3>
                 <p>This is my on-going 3D Tacticle FPS shooter that I have been working on since graduating university in December, 2024. This project was mainly motivated by games like Escape from Tarkov and Insurgency: Sandstorm.</p>
-                <p>I wanted to learn how to implement a game development tool (the KINEMATION FPS Animation tool), as game development companies use tools that are built and implemented like this all the time, and this was something I have never done before.</p>
+                <p>I wanted to learn how to implement a game development tool (the KINEMATION FPS Animation tool), as game development companies use tools that are built and implemented like this all the time, and I have never done this before.</p>
                 <p>In the preview it shows the working procedural animations working as intended as well as the basic idea of the game. A breach and clear game, where a player would go through rooms to clear out the enemies while saving innocent civilians. This is my current work in progress, but the animations look too good to not show.</p>
             </div>
             
